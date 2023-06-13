@@ -1,0 +1,87 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*estilos globales*/
+
+body {
+    background-image: url(https://escuelaelbs.com/wp-content/uploads/ropa-casual.jpg);
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif
+}
+
+
+
+/* footer */
+
+footer {
+    text-align: left;
+}
+
+/* grid index */
+
+
+header {
+    grid-area: header;
+}
+
+nav {
+    grid-area: nav;
+}
+
+main {
+    grid-area: main;
+}
+
+section {
+    grid-area: section;
+}
+
+div {
+    grid-area: div;
+}
+
+footer {
+    grid-area: footer;
+}
+
+
+
+
+/* Contacto styles */
+
+/* header */
+
+/* main */
+.ayuda {
+    background-color: blanchedalmond;
+}
+/* footer */
+
+
+/* Nosotros styles */
+
+/* header */
+
+/* main */
+
+/* footer */
+
+
+/*Novedades styles */
+
+/* header */
+
+/* main */
+
+/* footer */
+
+
+/* Servicio styles */
+
+/* header */
+
+/* main */
+
+/* footer */
