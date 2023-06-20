@@ -4,7 +4,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
     <link rel="stylesheet" href="../css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Heebo&family=Roboto:ital@0;1&display=swap" rel="stylesheet">
     <title>Servicios</title>
 </head>
 
@@ -12,77 +17,121 @@
 
     <header>
         <a href="../index.html"><img src="../imagenes/dibujos de remeras.png" alt="logo">
-       
+
     </header>
 
-    <nav>
-        <ul>
-            <li><a href="../pages/contacto.html">contacto</a></li>
-            <li><a href="../pages/Nosotros.html">Nosotros</a></li>
-            <li><a href="../pages/Novedades.html">Novedades</a></li>
-            <li><a href="#">servicio</a></li>
-            <li><a href="../index.html">Inicio</a></li>
-        </ul>
-    </nav>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="../index.html">Inicio</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="../pages/Novedades.html">Novedades</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="../pages/contacto.html">Contacto</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="../pages/Nosotros.html">Nosotros</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link disabled">Servicio</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
 
     <main>
 
         <h1>seleccion de producto</h1>
-        <section id="ropa de tendencia">
+        <section id="Ropa de Tendencia 1">
+            <h2>Camperas</h2>
             <div>
                 <ul>
-                    <li> <img src="../imagenes/7-atuendos-con-ropa-casual-para-mujer.jpg" target="_blank"></li>
-                    <li> <img src="../imagenes/business-casual-clothing-for-men.jpg" target="_blank"></li>
+
+                    <li> <img src="../imagenes servicio/campera-1.png" alt="Campera 1"></li>
+                    <li><img src="../imagenes servicio/campera -2.png" alt="Campera 2"></li>
+                    <li><img src="../imagenes servicio/campera -3.png" alt="Campera 3"></li>
                 </ul>
             </div>
         </section>
 
-        <table>
-            <th>Tendencias</th>
-            <tr>
-                <td>remera 1</td>
-                <td>bermuda 1</td>
-                <td>musculosa 1</td>
-            </tr>
-            <tr>
-                <td>remera 2</td>
-                <td>bermuda 2</td>
-                <td>musculosa 2</td>
-            </tr>
-            <tr>
-                <td>remera 3</td>
-                <td>bermuda 3</td>
-                <td>musculosa 3</td>
-            </tr>
-        </table>
-        
+        <section id="Ropa de Tendencia 2">
+            <h2>Buzos</h2>
+            <div>
+                <ul>
+                    <li><img src="../imagenes servicio/buzo-1.png" alt="Buzo 1"></li>
+                    <li><img src="../imagenes servicio/buzo-2.png" alt="Buzo 2"></li>
+                    <li><img src="../imagenes servicio/buzo-3.png" alt="Buzo 3"></li>
+                </ul>
+            </div>
+        </section>
+
+        <section id="Ropa de Tendencia 3">
+            <h2>Pantalones de mujer</h2>
+            <div>
+                <ul>
+                    <li><img src="../imagenes servicio/pantalon-1.png" alt="Pantalon 1"></li>
+                    <li><img src="../imagenes servicio/pantalon-2.png" alt="Pantalon 2"></li>
+                    <li><img src="../imagenes servicio/pantalon-3.png" alt="Pantalon 3"></li>
+                </ul>
+            </div>
+        </section>
+
+        <div>
+            <table>
+                <th>Combinaciones de Estilos</th>
+                <tr>
+                    <td>remera 1</td>
+                    <td>bermuda 1</td>
+                    <td>musculosa 1</td>
+                </tr>
+                <tr>
+                    <td>remera 2</td>
+                    <td>bermuda 2</td>
+                    <td>musculosa 2</td>
+                </tr>
+                <tr>
+                    <td>remera 3</td>
+                    <td>bermuda 3</td>
+                    <td>musculosa 3</td>
+                </tr>
+            </table>
+        </div>
+
+
     </main>
 
     <footer>
-        <div>
+        <div class="Redes">
             <h2>Redes</h2>
             <ul>
-                <li>facebook<a href="./imagenes/" target="_blank"></a></li>
-                <li>instagram<a href="htpps://instagram.com" target="_blank"></a></li>
-                <li>whatsapp<a href="htpps://whatsapp" target="_blank"></a></li>
+                <li><a href="#"><img src="../imagenes/logo de facebook-1.png" alt="Logo de facebook"></a></li>
+                <li><a href="#"><img src="../imagenes/logo de instagram-2.png" alt="Logo de instagram"></a></li>
             </ul>
         </div>
-        <div>
+        <div class="Contactos">
             <h2>Contactanos</h2>
             <ul>
                 <li>11.1111.1111</li>
                 <li>mail</li>
             </ul>
+            <input type="email" id="email" placeholder="Ingresa tu email">
         </div>
-        <input type="Volver arriba">
+        <div>
+            <a class="button" href="#">volver arriba</a>
+        </div>
 
-        <a href="../index.html">voler al inicio</a>
-
-        <h3>Sitio creado por Amado omar/copyright2023</h3>
-
+        <p>Sitio creado por Amado omar/copyright2023</p>
     </footer>
 
-
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+        crossorigin="anonymous"></script>
 </body>
 
 </html>
