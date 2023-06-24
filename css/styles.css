@@ -11,11 +11,151 @@ body {
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif
 }
 
+/* Index */
+
+body{
+    display: grid;
+    grid-template-columns: ;
+    grid-template-areas: ;
+    ""
+    ""
+    ""
+    ""
+}
+
+h1 {
+    background-color: grey;
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+nav {
+    background-color: grey;
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-evenly;
+    height: 30px;
+    align-items: center;
+
+}
+
+nav li {
+    padding: 0 20px;
+}
+
+h2 {
+    display: flex;
+}
+
+#Muestra {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: stretch;
+    padding: 70px;
+    border-radius: 70px;
+}
+
+#Muestra2 {
+    display: flex;
+    flex-direction: row;
+    align-items: stretch;
+    padding: 70px;
+   
+}
+
+#Muestra3 {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: stretch;
+    padding: 50px;
+}
+
+#Muestra div img {
+    border-radius: 35px;
+    box-shadow: 15%;
+}
+
+#Muestra2 div img {
+    border-radius: 35px;
+    box-shadow: 15%;
+}
+
+#Muestra3 div img {
+    border-radius: 35px;
+    box-shadow: 15%;
+}
+
+#Publicidad {
+    display: flex;
+    flex-direction: column;
+    margin: 70px;
+    padding: 70px;
+}
+
+#Publicidad h2 {
+    justify-content: center;
+    padding: 30px;
+}
+
+#Publicidad div img {
+    justify-content: center;
+    border-radius: 35px;
+    box-shadow: 15%;
+    align-items: center;
+}
+
+#Publicidad div {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin: 30px;
+}
+
+footer p {
+    display: flex;
+    justify-content: center;
+}
+
+footer div .Redes {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    list-style-type: none;
+}
+
+footer div .Contactos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    list-style-type: none;
+}
+
+footer div a {
+    display: flex;
+    justify-content: center;
+    margin: 15px;
+}
+
+/* table */
+@media (max-width: 1024) {
+
+}
+
+/* mobile first */
+@media (max-width: 300) {
+    
+}
 
 
-/* footer */
 
-/* grid index */
+
+
+
+
 
 /* Contacto styles */
 
