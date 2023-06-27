@@ -4,22 +4,19 @@
     box-sizing: border-box;
 }
 
-h1 {
-    background-color: red;
-}
-
 body {
     display: grid;
-    grid-template-columns: 50% 300px 200px;
-    grid-template-rows: 200px 150% 20% 350px;
+    grid-template-columns:100px auto 300px;
     grid-template-areas:
-    "header header header"
-    "nav nav   nav"
-    "main main   aside"
-    "footer footer footer";
-    font-family: Arial, Helvetica, sans-serif;
-    background-color: rgb(38, 143, 103);
+    "nav header header"
+    "nav main   aside"
+    "nav main   aside"
+    "nav footer footer"
   }
+
+  h1 {
+    background-color: red;
+}
 
   h2 {
     background-color: beige;
@@ -31,8 +28,9 @@ body {
   }
 
   nav {
+    grid-area: nav;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     align-items: center;
     margin: 15px;
     padding: 15px;
@@ -42,14 +40,29 @@ body {
     list-style: none;
     margin: 15px;
     display: flex;
-    flex-direction: row-reverse;
+    flex-direction: column-reverse;
     padding: 15px;
+align-items: flex-start;
+  }
 
+  main {
+    grid-area: main;
+    background-color: beige;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 15px;
+    padding: 15px;
+  }
+
+  footer {
+    grid-area: footer;
   }
 
   footer div {
     display: flex;
     background-color: beige;
+    justify-content: center;
   }
 
   footer p {
@@ -57,6 +70,49 @@ body {
     margin: 20px;
     padding-bottom: 20px;
     display: flex;
+  }
+
+  footer .Redes {
+    background-color: red;
+    list-style: none;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    height: 100px;
+  }
+  footer .Redes ul {
+    display: flex;
+    list-style: none;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: center;
+    align-items: center;
+  }
+
+  footer .Contactos {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    height: 100px;
+  }
+
+  footer .Contactos ul {
+    display: flex;
+    list-style: none;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: center;
+    align-items: center;
+  }
+
+  footer div a {
+    display: flex;
+    flex-direction: row;
+  }
+
+  header {
+    grid-area: header;
   }
 
   header a {
@@ -68,6 +124,19 @@ body {
     flex-direction: row;
     justify-content: space-around;
   }
+
+aside {
+  grid-area: aside;
+  display: flex;
+  flex-direction: column;
+
+}
+
+aside article img {
+  border-radius: 10%;
+  flex-direction: column;
+  display: flex;
+}
 
 
 
