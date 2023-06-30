@@ -11,37 +11,72 @@ body {
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif
 }
 
-/* Index */
+/*-Index-*/
 
 body {
     display: grid;
-    grid-template-columns: 100px 60% 40%;
-    grid-template-rows: 10% 65% 100px 1fr;
-    grid-template-areas: "nav header header" "nav main   aside" "nav main   aside" "nav footer footer";
-    font-family: Arial, Helvetica, sans-serif;
-    background-color: rgb(38, 143, 103);
+    grid-template-columns: 300px 300px 300px;
+    grid-template-rows: 100px 100px 30% 200px 1%;
+    grid-template-areas:
+        "header header header"
+        "nav    nav    nav"
+        "main   main   aside"
+        "main   main   aside"
+        "footer footer footer";
+    align-content: space-around;
+    justify-items: center;
 }
 
-h1 {
+/*----index-header----*/
+
+header {
+    grid-area: header;
+    display: flex;
+    margin: 15px;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 10%;
+
+}
+
+header h1 {
     background-color: grey;
     margin-top: 10px;
     display: flex;
     justify-content: center;
+    flex-direction: column;
 }
 
+/*----index-nav----*/
+nav {
+    grid-area: nav;
+    display: flex;
+}
 
 nav ul {
-    list-style-type: none;
     display: flex;
-    justify-content: space-evenly;
-    height: 10px;
+    list-style-type: none;
+    margin-top: 20%;
+    margin-inline: 10%;
+    flex-direction: row-reverse;
+    justify-content: center;
     align-items: center;
-    margin-top: 10px;
 
 }
 
-nav li {
-    padding: 0 20px;
+nav ul li {
+    display: flex;
+    background-color: grey;
+    margin: 10%;
+}
+
+
+/*----index-main----*/
+main {
+    grid-area: main;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
 }
 
 h2 {
@@ -86,11 +121,22 @@ h2 {
     box-shadow: 15%;
 }
 
+
+/*----index-aside----*/
+aside {
+    grid-area: aside;
+    display: flex;
+    margin: 5%;
+    padding: 5%;
+    flex-direction: column;
+
+}
+
 #Publicidad {
     display: flex;
     flex-direction: column;
-    margin: 70px;
-    padding: 70px;
+    margin: 10%;
+    padding: 10%;
 }
 
 #Publicidad h2 {
@@ -110,6 +156,13 @@ h2 {
     align-items: center;
     flex-direction: column;
     margin: 30px;
+}
+
+/*----index-footer----*/
+footer {
+    grid-area: footer;
+    display: flex;
+
 }
 
 footer p {
@@ -144,13 +197,6 @@ footer div a {
 @media (max-width: 300) {}
 
 
-
-
-
-
-
-
-
 /* Contacto styles */
 
 /* header */
@@ -169,13 +215,149 @@ footer div a {
 /* footer */
 
 
-/*Novedades styles */
+/*----Novedades-styles---- */
 
-/* header */
+body {
+    display: grid;
+    grid-template-columns: 100px auto 300px;
+    grid-template-areas:
+        "nav header header"
+        "nav main   aside"
+        "nav main   aside"
+        "nav footer footer"
+}
 
-/* main */
+h1 {
+    background-color: red;
+}
 
-/* footer */
+h2 {
+    background-color: beige;
+}
+
+#Publicidad {
+    display: flex;
+    justify-content: center;
+}
+
+/*----Novedades-header----*/
+header {
+    grid-area: header;
+}
+
+header a {
+    display: flex;
+    margin: 15px;
+    padding: 15px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    border-radius: 15%;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+/*----Novedades-nav----*/
+
+nav {
+    grid-area: nav;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 15px;
+    padding: 15px;
+}
+
+nav ul {
+    list-style: none;
+    margin: 15px;
+    display: flex;
+    flex-direction: column-reverse;
+    padding: 15px;
+    align-items: flex-start;
+}
+
+/*----Novedades-main----*/
+main {
+    grid-area: main;
+    background-color: beige;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 15px;
+    padding: 15px;
+}
+
+/*----Novedades-aside----*/
+
+aside {
+    grid-area: aside;
+    display: flex;
+    flex-direction: column;
+
+}
+
+aside article img {
+    border-radius: 10%;
+    flex-direction: column;
+    display: flex;
+}
+
+/*----Noveades-footer----*/
+footer {
+    grid-area: footer;
+}
+
+footer div {
+    display: flex;
+    background-color: beige;
+    justify-content: center;
+}
+
+footer p {
+    background-color: beige;
+    margin: 20px;
+    padding-bottom: 20px;
+    display: flex;
+}
+
+footer .Redes {
+    background-color: red;
+    list-style: none;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    height: 100px;
+}
+
+footer .Redes ul {
+    display: flex;
+    list-style: none;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: center;
+    align-items: center;
+}
+
+footer .Contactos {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    height: 100px;
+}
+
+footer .Contactos ul {
+    display: flex;
+    list-style: none;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: center;
+    align-items: center;
+}
+
+footer div a {
+    display: flex;
+    flex-direction: row;
+}
 
 
 /* Servicio styles */
