@@ -38,29 +38,28 @@ body {
         "main   main   aside"
         "main   main   aside"
         "footer footer footer";
-    align-content: space-around;
-    justify-items: center;
 }
 
 /*----index-header----*/
 
 header {
     grid-area: header;
-    display: flex;
-    width: 5px;
-    justify-content: center;
 }
 
 header .Titulo {
     background-color: beige;
     display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    height: 10vh;
 }
-
 
 /*----index-nav----*/
 nav {
     grid-area: nav;
     display: flex;
+    justify-content: space-around;
 }
 
 nav ul {
@@ -75,9 +74,10 @@ nav ul {
 nav ul li {
     display: flex;
     background-color: beige;
-    margin: 10%;
+    margin: 10px;
+    color: black;
+    border-radius: 20%;
 }
-
 
 /*----index-main----*/
 main {
@@ -101,7 +101,6 @@ main {
     flex-direction: row;
     align-items: stretch;
     padding: 20px;
-
 }
 
 #Muestra3 {
@@ -126,7 +125,6 @@ main {
     box-shadow: 15%;
 }
 
-
 /*----index-aside----*/
 aside {
     grid-area: aside;
@@ -134,7 +132,7 @@ aside {
     margin: 5%;
     padding: 5%;
     flex-direction: column;
-
+justify-content: center;
 }
 
 #Publicidad {
@@ -165,6 +163,7 @@ aside {
 }
 
 /*----index-footer----*/
+
 footer {
     grid-area: footer;
 }
@@ -174,7 +173,7 @@ footer p {
     margin: 10px;
     padding: 10px;
     font-size: 80%;
-
+    justify-content: center;
 }
 
 footer div {
@@ -191,6 +190,7 @@ footer div .Redes {
     display: flex;
     flex-direction: column;
     align-items: center;
+    border-radius: 5px;
 }
 
 footer div .Contactos {
@@ -199,14 +199,109 @@ footer div .Contactos {
     display: flex;
     flex-direction: column;
     align-items: center;
-
+    border-radius: 5px;
 }
 
-
+.button {
+    background-color: beige;
+    color: black;
+    text-decoration: none;
+    border-radius: 5px;
+    padding: 5px 10px;
+}
 
 
 /* table */
 @media (max-width: 1024) {}
 
 /* mobile first */
-@media (max-width: 300) {}
+@media (max-width: 300px) {
+    body {
+       display: flex;
+       flex-direction: column;
+    }
+
+    nav ul {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    header .Titulo {
+        font-size: 100%;
+    }
+
+    main #Muestra {
+        flex-direction: column;
+    }
+
+    main #Muestra2 {
+        flex-direction: column;
+    }
+
+    main #Muestra3 {
+        flex-direction: column;
+    }
+
+    nav .Contenedor .Paginas {
+        flex-direction: column-reverse;
+    }
+
+    footer .Contenedor {
+        flex-wrap: wrap;
+    }
+   /*----Styles-Novedades----*/
+}
+
+header .Logo img {
+    border-radius: 20%;
+
+}
+
+nav .Paginas {
+    display: flex;
+    flex-direction: row-reverse;
+    margin: 10px;
+    height: 140%;
+    align-items: center;
+}
+
+aside div {
+    display: flex;
+    flex-direction: column-reverse;
+    font-size: 15px;
+}
+
+aside div article {
+    margin: 5px;
+}
+
+aside div article img {
+    height: 20vh;
+}
+
+aside h2 {
+    display: flex;
+    align-items: center;
+}
+
+main .Indumentaria {
+   padding: 100px;
+   margin: 10px;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+}
+
+footer .Contenedor {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 100vh;
+    justify-content: space-between;
+}
+
+
+
+
