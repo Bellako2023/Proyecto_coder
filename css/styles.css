@@ -132,7 +132,7 @@ aside {
     margin: 5%;
     padding: 5%;
     flex-direction: column;
-justify-content: center;
+    justify-content: center;
 }
 
 #Publicidad {
@@ -217,8 +217,8 @@ footer div .Contactos {
 /* mobile first */
 @media (max-width: 300px) {
     body {
-       display: flex;
-       flex-direction: column;
+        display: flex;
+        flex-direction: column;
     }
 
     nav ul {
@@ -250,7 +250,8 @@ footer div .Contactos {
     footer .Contenedor {
         flex-wrap: wrap;
     }
-   /*----Styles-Novedades----*/
+
+    /*----Styles-Novedades----*/
 }
 
 header .Logo img {
@@ -286,12 +287,12 @@ aside h2 {
 }
 
 main .Indumentaria {
-   padding: 100px;
-   margin: 10px;
-   display: flex;
-   flex-direction: column;
-   justify-content: center;
-   align-items: center;
+    padding: 100px;
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 footer .Contenedor {
@@ -302,6 +303,21 @@ footer .Contenedor {
     justify-content: space-between;
 }
 
+/*----Style-Servicio----*/
 
+.Cuerpo {
+    height: 20%;
+    justify-content: flex-start;
+    align-content: center;
+}
 
+.col {
+    width: 30vh;
+    margin-top: 10%;
+    height: 10%;
+}
+
+.Encabezado {
+    margin-top: 30%;
+}
 
