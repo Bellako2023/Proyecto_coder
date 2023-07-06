@@ -1,0 +1,26 @@
+#Publicidad {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 5px;
+    padding: 5px;
+}
+
+#Publicidad h2 {
+    justify-content: center;
+    padding: 30px;
+}
+
+#Publicidad div img {
+    justify-content: center;
+    border-radius: 35px;
+    box-shadow: 15%;
+    align-items: center;
+}
+
+#Publicidad div {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin: 30px;
+}

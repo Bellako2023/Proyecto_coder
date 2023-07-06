@@ -1,0 +1,30 @@
+nav {
+    grid-area: nav;
+    display: flex;
+    justify-content: space-around;
+}
+
+nav ul {
+    display: flex;
+    list-style-type: none;
+    margin-inline: 10%;
+    justify-content: center;
+    align-items: flex-end;
+
+}
+
+nav ul li {
+    display: flex;
+    background-color: beige;
+    margin: 10px;
+    color: black;
+    border-radius: 20%;
+}
+
+nav .Paginas {
+    display: flex;
+    flex-direction: row-reverse;
+    margin: 10px;
+    height: 140%;
+    align-items: center;
+}

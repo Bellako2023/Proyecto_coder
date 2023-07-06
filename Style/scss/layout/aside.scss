@@ -1,0 +1,27 @@
+aside {
+    grid-area: aside;
+    display: flex;
+    margin: 5%;
+    padding: 5%;
+    flex-direction: column;
+    justify-content: center;
+}
+
+aside div {
+    display: flex;
+    flex-direction: column-reverse;
+    font-size: 15px;
+}
+
+aside div article {
+    margin: 5px;
+}
+
+aside div article img {
+    height: 20vh;
+}
+
+aside h2 {
+    display: flex;
+    align-items: center;
+}

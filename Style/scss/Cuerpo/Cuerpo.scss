@@ -1,0 +1,16 @@
+body {
+    display: grid;
+    grid-template-columns: 300px 300px 300px;
+    grid-template-rows: 100px 100px 50% 300px 100px;
+    grid-template-areas:
+        "header header header"
+        "nav    nav    nav"
+        "main   main   aside"
+        "main   main   aside"
+        "footer footer footer";
+}
+
+body {
+    background-image: url(https://escuelaelbs.com/wp-content/uploads/ropa-casual.jpg);
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif
+}

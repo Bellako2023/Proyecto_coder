@@ -1,0 +1,17 @@
+header {
+    grid-area: header;
+}
+
+header .Titulo {
+    background-color: beige;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    height: 10vh;
+}
+
+header .Logo img {
+    border-radius: 20%;
+
+}
