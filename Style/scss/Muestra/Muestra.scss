@@ -1,0 +1,36 @@
+#Muestra {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: stretch;
+    padding: 20px;
+    border-radius: 70px;
+
+    div img {
+        border-radius: 35px;
+        box-shadow: 15%;
+    }
+}
+
+#Muestra2 {
+    display: flex;
+    flex-direction: row;
+    align-items: stretch;
+    padding: 20px;
+
+    div img {
+        border-radius: 35px;
+        box-shadow: 15%;
+    }
+}
+
+#Muestra3 {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: stretch;
+    padding: 20px;
+
+    div img {
+        border-radius: 35px;
+        box-shadow: 15%;
+    }
+}

@@ -5,23 +5,23 @@ aside {
     padding: 5%;
     flex-direction: column;
     justify-content: center;
-}
 
-aside div {
-    display: flex;
-    flex-direction: column-reverse;
-    font-size: 15px;
-}
+    h2 {
+        display: flex;
+        align-items: center;
 
-aside div article {
-    margin: 5px;
-}
+        div {
+            display: flex;
+            flex-direction: column-reverse;
+            font-size: 15px;
 
-aside div article img {
-    height: 20vh;
-}
+            article {
+                margin: 5px;
 
-aside h2 {
-    display: flex;
-    align-items: center;
+                img {
+                    height: 20vh;
+                }
+            }
+        }
+    }
 }

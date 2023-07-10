@@ -1,17 +1,19 @@
 header {
     grid-area: header;
+    .Titulo {
+        background-color: beige;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        height: 10vh;
+        .Logo img {
+            border-radius: 20%;
+        
+        }
+    }
 }
 
-header .Titulo {
-    background-color: beige;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    align-items: center;
-    height: 10vh;
-}
-
-header .Logo img {
-    border-radius: 20%;
-
+.Encabezado {
+    margin-top: 30%;
 }

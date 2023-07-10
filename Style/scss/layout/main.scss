@@ -4,13 +4,24 @@ main {
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    .Indumentaria {
+        padding: 100px;
+        margin: 10px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
 }
 
-main .Indumentaria {
-    padding: 100px;
-    margin: 10px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+.Cuerpo {
+    height: 20%;
+    justify-content: flex-start;
+    align-content: center;
+}
+
+.col {
+    width: 30vh;
+    margin-top: 10%;
+    height: 10%;
 }
