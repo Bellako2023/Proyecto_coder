@@ -1,18 +1,304 @@
-/* Error: Undefined mixin.
- *   ,
- * 6 |         @include flex;
- *   |         ^^^^^^^^^^^^^
- *   '
- *   Style\scss\layout\header.scss 6:9  @import
- *   Style\scss\Style.scss 2:9          root stylesheet */
-
-body::before {
-  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
-      "Droid Sans Mono", monospace, monospace;
-  white-space: pre;
-  display: block;
-  padding: 1em;
-  margin-bottom: 1em;
-  border-bottom: 2px solid black;
-  content: "Error: Undefined mixin.\a   \2577 \a 6 \2502          @include flex;\d\a   \2502          ^^^^^^^^^^^^^\a   \2575 \a   Style\\scss\\layout\\header.scss 6:9  @import\a   Style\\scss\\Style.scss 2:9          root stylesheet";
+header {
+  grid-area: header;
+  width: 100%;
+  height: auto;
+  position: relative;
+  overflow: hidden;
 }
+header .Titulo {
+  background-color: beige;
+  display: flex;
+  height: 10vh;
+}
+header .Titulo .Logo img {
+  border-radius: 20%;
+}
+
+.Encabezado {
+  margin-top: 30%;
+}
+
+video {
+  width: 100%;
+}
+
+.absolute {
+  width: 100%;
+  height: 100%;
+  top: 0;
+  right: 0;
+  display: flex;
+  position: absolute;
+  text-align: center;
+  justify-content: center;
+}
+
+main {
+  grid-area: main;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+main .Indumentaria {
+  padding: 100px;
+  margin: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.Cuerpo {
+  height: 20%;
+  justify-content: flex-start;
+  align-content: center;
+}
+
+.col {
+  width: 30vh;
+  margin-top: 10%;
+  height: 10%;
+}
+
+aside {
+  grid-area: aside;
+  display: flex;
+  margin: 5%;
+  padding: 5%;
+  flex-direction: column;
+  justify-content: center;
+}
+aside h2 {
+  display: flex;
+  align-items: center;
+}
+aside h2 div {
+  display: flex;
+  flex-direction: column-reverse;
+  font-size: 15px;
+}
+aside h2 div article {
+  margin: 5px;
+}
+aside h2 div article img {
+  height: 20vh;
+}
+
+footer {
+  grid-area: footer;
+}
+footer .Contenedor {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 100vh;
+  justify-content: space-between;
+}
+footer .Contenedor p {
+  display: flex;
+  margin: 10px;
+  padding: 10px;
+  font-size: 80%;
+}
+footer .Contenedor p div {
+  display: flex;
+  justify-content: space-around;
+  flex-direction: row-reverse;
+  font-size: 80%;
+  align-items: center;
+}
+footer .Contenedor p div .Redes {
+  background-color: beige;
+  list-style-type: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 5px;
+}
+footer .Contenedor p div .Redes .Contactos {
+  background-color: beige;
+  list-style-type: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 5px;
+}
+
+nav {
+  grid-area: nav;
+  display: flex;
+  justify-content: space-around;
+}
+nav ul {
+  display: flex;
+  list-style-type: none;
+  margin-inline: 10%;
+  justify-content: center;
+  align-items: flex-end;
+}
+nav ul li {
+  display: flex;
+  background-color: beige;
+  margin: 10px;
+  color: black;
+  border-radius: 20%;
+}
+nav ul li .Paginas {
+  display: flex;
+  flex-direction: row-reverse;
+  margin: 10px;
+  height: 140%;
+  align-items: center;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.button {
+  background-color: beige;
+  color: black;
+  text-decoration: none;
+  border-radius: 5px;
+  padding: 5px 10p;
+}
+
+h1 {
+  background-color: beige;
+  margin: 10px;
+}
+h1:hover {
+  background-color: goldenrod;
+}
+
+h2 {
+  display: flex;
+  flex-direction: column;
+}
+
+p {
+  color: black;
+  font-size: 120%;
+}
+p:hover {
+  color: white;
+}
+
+body {
+  display: grid;
+  grid-template-columns: 300px 300px 300px;
+  grid-template-rows: 100px 100px 50% 300px 100px;
+  grid-template-areas: "header header header" "nav    nav    nav" "main   main   aside" "main   main   aside" "footer footer footer";
+  background-image: url(https://escuelaelbs.com/wp-content/uploads/ropa-casual.jpg);
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+}
+
+#Muestra {
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: stretch;
+  padding: 20px;
+  border-radius: 70px;
+}
+#Muestra div img {
+  border-radius: 35px;
+  box-shadow: 15%;
+}
+
+#Muestra2 {
+  display: flex;
+  flex-direction: row;
+  align-items: stretch;
+  padding: 20px;
+}
+#Muestra2 div img {
+  border-radius: 35px;
+  box-shadow: 15%;
+}
+
+#Muestra3 {
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: stretch;
+  padding: 20px;
+}
+#Muestra3 div img {
+  border-radius: 35px;
+  box-shadow: 15%;
+}
+
+#Publicidad {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 5px;
+  padding: 5px;
+}
+#Publicidad h2 {
+  justify-content: center;
+  padding: 30px;
+}
+#Publicidad h2 div {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin: 30px;
+}
+#Publicidad h2 div img {
+  justify-content: center;
+  border-radius: 35px;
+  box-shadow: 15%;
+  align-items: center;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/*estilos globales*/
+/*-Index-*/
+/*----index-header----*/
+/*----index-nav----*/
+/*----index-main----*/
+/*----index-aside----*/
+/*----index-footer----*/
+/* table */
+/* mobile first */
+@media (max-width: 300px) {
+  body {
+    display: flex;
+    flex-direction: column;
+  }
+  nav ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  header .Titulo {
+    font-size: 100%;
+  }
+  main #Muestra {
+    flex-direction: column;
+  }
+  main #Muestra2 {
+    flex-direction: column;
+  }
+  main #Muestra3 {
+    flex-direction: column;
+  }
+  nav .Contenedor .Paginas {
+    flex-direction: column-reverse;
+  }
+  footer .Contenedor {
+    flex-wrap: wrap;
+  }
+}
+/*----Styles-Novedades----*/
+/*----Style-Servicio----*/
+
+/*# sourceMappingURL=Style.css.map */

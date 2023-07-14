@@ -1,7 +1,5 @@
-@mixin flex() {
+@mixin flex($direction) {
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
 }
-
-@mixin 

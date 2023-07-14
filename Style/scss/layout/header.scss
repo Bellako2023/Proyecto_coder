@@ -1,17 +1,39 @@
 header {
     grid-area: header;
+    width: 100%;
+    height: auto;
+    position: relative;
+    overflow: hidden;
+
     .Titulo {
         background-color: beige;
         display: flex;
-        @include flex;
         height: 10vh;
+
         .Logo img {
             border-radius: 20%;
-        
+
         }
     }
 }
 
 .Encabezado {
     margin-top: 30%;
+}
+
+video {
+    width: 100%;
+}
+
+.absolute {
+    width: 100%;
+    height: 100%;
+    top: 0;
+    right: 0;
+    display: flex;
+    position: absolute;
+    text-align: center;
+    justify-content: center;
+    
+
 }
