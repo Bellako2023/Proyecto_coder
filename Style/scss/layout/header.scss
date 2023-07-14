@@ -3,9 +3,7 @@ header {
     .Titulo {
         background-color: beige;
         display: flex;
-        flex-direction: column;
-        justify-content: space-around;
-        align-items: center;
+        @include flex;
         height: 10vh;
         .Logo img {
             border-radius: 20%;

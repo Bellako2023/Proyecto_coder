@@ -1,6 +1,7 @@
 @mixin flex() {
     flex-direction: column;
+    justify-content: space-around;
     align-items: center;
-    border-radius: 5px;
-
 }
+
+@mixin 

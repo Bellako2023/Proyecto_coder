@@ -9,6 +9,10 @@
 h1 {
     background-color: beige;
     margin: 10px;
+
+    &:hover{
+        background-color: goldenrod;
+    }
 }
 
 h2 {
@@ -19,4 +23,8 @@ h2 {
 p {
     color: black;
     font-size: 120%;
+    
+    &:hover{
+        color: white;
+    }
 }
