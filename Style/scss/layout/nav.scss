@@ -1,7 +1,13 @@
 nav {
     grid-area: nav;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
+    background-color: #0769e9;
+    position: fixed;
+    height: 80px;
+    width: 100%;
+    top: 0;
+    left: 0;
 
     ul {
         display: flex;
@@ -13,9 +19,26 @@ nav {
         li {
             display: flex;
             background-color: beige;
-            margin: 10px;
+            margin: 0 10px 0 0;
             color: black;
-            border-radius: 20%;
+            display: inline;
+            text-align: center;
+
+            a {
+                padding: 2px 7px 2px 7px;
+                color: #666;
+                background-color: #eeeeee;
+                border: 1px solid #ccc;
+                text-decoration: none;
+                text-transform: uppercase;
+                width: max-content;
+                border-radius: 3px;
+            }
+
+            a:hover {
+                background-color: #034574;
+                color: #ffffff;
+            }
 
             .Paginas {
                 display: flex;

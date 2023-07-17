@@ -125,7 +125,13 @@ footer .Contenedor p div .Redes .Contactos {
 nav {
   grid-area: nav;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
+  background-color: #0769e9;
+  position: fixed;
+  height: 80px;
+  width: 100%;
+  top: 0;
+  left: 0;
 }
 nav ul {
   display: flex;
@@ -137,9 +143,24 @@ nav ul {
 nav ul li {
   display: flex;
   background-color: beige;
-  margin: 10px;
+  margin: 0 10px 0 0;
   color: black;
-  border-radius: 20%;
+  display: inline;
+  text-align: center;
+}
+nav ul li a {
+  padding: 2px 7px 2px 7px;
+  color: #666;
+  background-color: #eeeeee;
+  border: 1px solid #ccc;
+  text-decoration: none;
+  text-transform: uppercase;
+  width: max-content;
+  border-radius: 3px;
+}
+nav ul li a:hover {
+  background-color: #034574;
+  color: #ffffff;
 }
 nav ul li .Paginas {
   display: flex;
