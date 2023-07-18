@@ -84,30 +84,47 @@ aside h2 div article img {
 
 footer {
   grid-area: footer;
+  width: 100%;
+  padding: 50px 0;
+  background-color: grey;
+}
+footer .container-footer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
   max-width: 1200px;
-  padding: 40px 0;
   margin: auto;
-  background: grey;
+  margin-top: 100px;
 }
-footer .logo-footer {
-  text-align: center;
-}
-footer .logo-footer .redes-footer a {
+footer .container-footer .box-footer {
   display: flex;
-  justify-content: center;
-  font-size: 20px;
-  margin: 20px;
-  background: #efefef;
-  width: 50px;
-  height: 50px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  border-radius: 100%;
-  color: #a2a2a2;
+  flex-direction: column;
+  padding: 40px;
 }
-footer .logo-footer .redes-footer a img {
+footer .container-footer .box-footer .texto {
+  max-width: 350px;
+  margin-top: 20px;
+  font-weight: 500;
+  color: black;
+  font-size: 18px;
+}
+footer .container-footer .box-footer .logo img {
   width: 100px;
+}
+
+.box-footer h2 {
+  margin-bottom: 30px;
+  color: #343434;
+  font-weight: 700;
+}
+
+.box-footer a {
+  margin-top: 10px;
+  font-weight: 600;
+  color: #7a7a7a;
+}
+.box-footer a a:hover {
+  opacity: 0.6;
 }
 
 nav {
