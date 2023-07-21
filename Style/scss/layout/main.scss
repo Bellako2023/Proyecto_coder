@@ -3,7 +3,7 @@ main {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
+    justify-content: space-around;
     .Indumentaria {
         padding: 100px;
         margin: 10px;
@@ -14,14 +14,33 @@ main {
     }
 }
 
-.Cuerpo {
-    height: 20%;
-    justify-content: flex-start;
-    align-content: center;
-}
 
 .col {
     width: 30vh;
     margin-top: 10%;
     height: 10%;
+}
+
+// Estilos de contacto
+.ayuda {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    color: darkblue;
+}
+
+.Nombre {
+    margin: 10px 0;
+    display: flex;
+    padding: 10px 0;
+}
+
+.Dirrecion {
+    margin: 10px 0;
+}
+
+.Ubicacion {
+    margin: 10px 0;
+    display: flex;
+    padding: 10px 0;
 }

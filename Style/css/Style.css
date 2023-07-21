@@ -1,6 +1,6 @@
 header {
   grid-area: header;
-  background-image: url(logo\ de\ imagen.jpg);
+  background: url;
   height: 400px;
 }
 header section {
@@ -31,12 +31,22 @@ header section h1 {
   margin: 5px;
 }
 
+.Contacto {
+  height: 250px;
+  background-size: cover;
+  background: url(logodeimagen.png);
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
 main {
   grid-area: main;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
+  justify-content: space-around;
 }
 main .Indumentaria {
   padding: 100px;
@@ -47,16 +57,33 @@ main .Indumentaria {
   align-items: center;
 }
 
-.Cuerpo {
-  height: 20%;
-  justify-content: flex-start;
-  align-content: center;
-}
-
 .col {
   width: 30vh;
   margin-top: 10%;
   height: 10%;
+}
+
+.ayuda {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  color: darkblue;
+}
+
+.Nombre {
+  margin: 10px 0;
+  display: flex;
+  padding: 10px 0;
+}
+
+.Dirrecion {
+  margin: 10px 0;
+}
+
+.Ubicacion {
+  margin: 10px 0;
+  display: flex;
+  padding: 10px 0;
 }
 
 aside {
@@ -87,7 +114,7 @@ footer {
   grid-area: footer;
   width: 100%;
   padding: 50px 0;
-  background-color: grey;
+  background-color: none;
 }
 footer .footer-pie {
   display: flex;
@@ -100,8 +127,8 @@ footer .container-footer {
   flex-wrap: wrap;
   justify-content: space-between;
   max-width: 1200px;
-  margin: auto;
-  margin-top: 100px;
+  margin: none;
+  margin-top: -70px;
 }
 footer .container-footer .box-footer {
   display: flex;
@@ -145,11 +172,22 @@ footer .button {
   align-items: center;
 }
 
+.footer a {
+  color: white;
+  text-decoration: none;
+  background: #88c34a;
+  padding: 0 7px;
+  border-radius: 30px;
+  font-size: none;
+  margin: 5px;
+}
+
 nav {
   grid-area: nav;
   display: flex;
   justify-content: space-between;
   background-color: #0769e9;
+  background-image: linear-gradient(to right, #0769e9, white);
   position: fixed;
   height: 80px;
   width: 100%;
@@ -292,14 +330,36 @@ body {
   box-sizing: border-box;
 }
 
-/*estilos globales*/
-/*-Index-*/
-/*----index-header----*/
-/*----index-nav----*/
-/*----index-main----*/
-/*----index-aside----*/
-/*----index-footer----*/
 /* table */
+@media (max-width: 992px) {
+  body {
+    display: flex;
+    flex-direction: column;
+  }
+  nav ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  header .Titulo {
+    font-size: 100%;
+  }
+  main #Muestra {
+    flex-direction: column;
+  }
+  main #Muestra2 {
+    flex-direction: column;
+  }
+  main #Muestra3 {
+    flex-direction: column;
+  }
+  nav .Contenedor .Paginas {
+    flex-direction: column-reverse;
+  }
+  footer .Contenedor {
+    flex-wrap: wrap;
+  }
+}
 /* mobile first */
 @media (max-width: 300px) {
   body {
@@ -330,6 +390,13 @@ body {
     flex-wrap: wrap;
   }
 }
+/*estilos globales*/
+/*-Index-*/
+/*----index-header----*/
+/*----index-nav----*/
+/*----index-main----*/
+/*----index-aside----*/
+/*----index-footer----*/
 /*----Styles-Novedades----*/
 /*----Style-Servicio----*/
 

@@ -1,6 +1,6 @@
 header {
     grid-area: header;
-    background-image: url(logo\ de\ imagen.jpg);
+    background: url ();
     height: 400px;
 
     section {
@@ -32,4 +32,14 @@ header {
     border-radius: 30px;
     font-size: 30px;
     margin: 5px;
+}
+
+.Contacto {
+    height: 250px;
+    background-size: cover;
+    background: url(logodeimagen.png);
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
 }

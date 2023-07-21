@@ -1,5 +1,78 @@
-@mixin flex($direction) {
-    flex-direction: column;
-    justify-content: space-around;
-    align-items: center;
+
+/* table */
+@media (max-width: 992px) {
+    body {
+        display: flex;
+        flex-direction: column;
+    }
+
+    nav ul {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    header .Titulo {
+        font-size: 100%;
+    }
+
+    main #Muestra {
+        flex-direction: column;
+    }
+
+    main #Muestra2 {
+        flex-direction: column;
+    }
+
+    main #Muestra3 {
+        flex-direction: column;
+    }
+
+    nav .Contenedor .Paginas {
+        flex-direction: column-reverse;
+    }
+
+    footer .Contenedor {
+        flex-wrap: wrap;
+    }
 }
+
+/* mobile first */
+@media (max-width: 300px) {
+    body {
+        display: flex;
+        flex-direction: column;
+    }
+
+    nav ul {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    header .Titulo {
+        font-size: 100%;
+    }
+
+    main #Muestra {
+        flex-direction: column;
+    }
+
+    main #Muestra2 {
+        flex-direction: column;
+    }
+
+    main #Muestra3 {
+        flex-direction: column;
+    }
+
+    nav .Contenedor .Paginas {
+        flex-direction: column-reverse;
+    }
+
+    footer .Contenedor {
+        flex-wrap: wrap;
+    }
+}
+
+

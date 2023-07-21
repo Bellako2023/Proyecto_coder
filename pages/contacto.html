@@ -6,16 +6,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/98f280d957.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="../Style/css/Style.css">
     <title>Contacto</title>
 </head>
 
 <body>
 
-    <header>
-        <a href="#"><img src="../imagenes/dibujos de remeras.png" alt="logo"></a>
+    <header class="Contacto">
+        <h1>Contactanos</h1>
+        <img src="../imagenes/logo de imagen1.png" class="img-fluid" alt="...">
     </header>
-    Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque at ex facilis facere laudantium incidunt reprehenderit maiores quasi aspernatur voluptates doloremque, iusto dignissimos praesentium labore ipsa fuga obcaecati quo ea!
 
     <nav>
         <ul>
@@ -28,67 +29,33 @@
 
     </nav>
 
-    <main>
-        <h1>Estamos para ayudarte!!</h1>
+    <main class="Ayuda">
 
-        <div class="row">
-            <div class="col">
-                <input type="text" class="form-control" placeholder="First name" aria-label="First name">
-            </div>
-            <div class="col">
-                <input type="text" class="form-control" placeholder="Last name" aria-label="Last name">
-            </div>
+        <h1>Estamos para ayudarte!!</h1>
+        <p>Rellene los campos y deje su comentario</p>
+
+        <div class="Nombre">
+            <label for="Nombre">Nombre</label>
+            <input type="Nombre" placeholder="Nombre">
+            <label for="Apellido">Apellido</label>
+            <input type="Apellido" placeholder="Apellido">
+        </div>
+        <div class="Direccion">
+            <label for="Dirrecion">Direccion</label>
+            <input type="Direccion" placeholder="Dirrecion">
+            <label for="Mail">Mail</label>
+            <input type="email" name="#" id="#" placeholder="Mail">
+        </div>
+        <div class="Ubicacion">
+            <label for="Telefono">Telefono</label>
+            <input type="Telefono" placeholder="Telefono">
+            <label for="ubicacion">ubicacion</label>
+           <input type="Zona" placeholder="Zona">
         </div>
 
-        <form class="row g-3">
-            <div class="col-md-6">
-                <label for="inputEmail4" class="form-label">Email</label>
-                <input type="email" class="form-control" id="inputEmail4">
-            </div>
-            <div class="col-md-6">
-                <label for="inputPassword4" class="form-label">Password</label>
-                <input type="password" class="form-control" id="inputPassword4">
-            </div>
-            <div class="col-12">
-                <label for="inputAddress" class="form-label">Address</label>
-                <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St">
-            </div>
-            <div class="col-12">
-                <label for="inputAddress2" class="form-label">Address 2</label>
-                <input type="text" class="form-control" id="inputAddress2" placeholder="Apartment, studio, or floor">
-            </div>
-            <div class="col-md-6">
-                <label for="inputCity" class="form-label">City</label>
-                <input type="text" class="form-control" id="inputCity">
-            </div>
-            <div class="col-md-4">
-                <label for="inputState" class="form-label">State</label>
-                <select id="inputState" class="form-select">
-                    <option selected>Choose...</option>
-                    <option>...</option>
-                </select>
-            </div>
-            <div class="col-md-2">
-                <label for="inputZip" class="form-label">Zip</label>
-                <input type="text" class="form-control" id="inputZip">
-            </div>
-            <div class="col-12">
-                <div class="form-check">
-                    <input class="form-check-input" type="checkbox" id="gridCheck">
-                    <label class="form-check-label" for="gridCheck">
-                        Check me out
-                    </label>
-                </div>
-            </div>
-            <div class="col-12">
-                <button type="submit" class="btn btn-primary">Sign in</button>
-            </div>
-        </form>
-
         <form action="Desplegar">
-
-            <div>
-                <label for="ayuda">En que lo podemos ayudar</label>
+            <div class=>
+                <label for="ayuda">Selecciona</label>
                 <select id="ayuda">
                     <option value="ropa">rotura</option>
                     <option value="ajustado">talle chico</option>
@@ -112,43 +79,60 @@
                 <input type="radio" id="cintura" value="cintura" name="cinturon">
 
             </div>
-
         </form>
 
-        <h1>dejanos tu comentario</h1>
+        <p>Escriba aqui</p>
 
         <textarea name="comentario" id="comentario" cols="35" rows="10"></textarea>
-
 
         <button type="submit">Enviar</button>
         <input type="reset" value="limpiar">
 
-
     </main>
 
     <footer>
+        <div class="container-footer">
+            <div class="box-footer">
+                <div class="logo">
+                    <img src="../imagenes/dibujos de remeras.png" alt="logo de remeras">
+                </div>
+                <div class="texto">
+                    <p>Nos dedicamos al esfuerzo que nos brindan los usuarios
+                        y dedicamos el tiempo para poder seguir creciendo
+                        en la pagina.
+                    </p>
+                </div>
+            </div>
+            <div class="box-footer">
+                <h2>Buscanos</h2>
+                <a href="#">11-4062-8206</a>
+                <a href="#">buscanos@gmail.com</a>
+                <a href="#">buscanos@yahoo.com.ar</a>
+                <a href="#">buscanos en youtube</a>
+            </div>
 
-        <div class="Redes">
-            <h2>Redes</h2>
-            <ul>
-                <li><a href="#"><img src="../imagenes/logo de facebook-1.png" alt="Logo de facebook"></a></li>
-                <li><a href="#"><img src="../imagenes/logo de instagram-2.png" alt="Logo de instagram"></a></li>
-            </ul>
+            <div class="box-footer">
+                <h2>Compañia</h2>
+                <a href="#">Acerca de</a>
+                <a href="#">Trabajos</a>
+                <a href="#">Procesos</a>
+                <a href="#">Servicios</a>
+            </div>
+
+            <div class="box-footer">
+                <h2>Redes Sociales</h2>
+                <a href="#"><i class="fa-brands fa-facebook"></i>Facebook</a>
+                <a href="#"><i class="fa-brands fa-instagram"></i>Instagram</a>
+                <a href="#"><i class="fa-brands fa-whatsapp"></i>Whataspp</a>
+            </div>
+        </div>
+        <hr>
+        <div class="footer">
+            <a class="button" href="#">volver arriba</a>
+            <a href="../index.html">volver al inicio</a>
         </div>
 
-        <div class="Contacto">
-            <h2>Contactanos</h2>
-            <ul>
-                <li>11.1111.1111</li>
-                <li>mail</li>
-            </ul>
-        </div>
-
-        <a class="button" href="#">volver arriba</a>
-
-        <a href="../index.html">volver al inicio</a>
-
-        <p>Sitio creado por Amado omar/copyright2023</p>
+        <p class="footer-pie">Copyright2023 - Todos los derechos reservados</p>
 
     </footer>
 
