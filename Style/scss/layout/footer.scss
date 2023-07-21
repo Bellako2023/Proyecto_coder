@@ -4,6 +4,13 @@ footer {
     padding: 50px 0;
     background-color: grey;
 
+    .footer-pie {
+        display: flex;
+        font-size: 15px;
+        flex-direction: column;
+        align-items: center;
+    }
+
     .container-footer {
         display: flex;
         flex-wrap: wrap;
@@ -16,7 +23,7 @@ footer {
             display: flex;
             flex-direction: column;
             padding: 40px;
-            
+
             .texto {
                 max-width: 350px;
                 margin-top: 20px;
@@ -24,8 +31,9 @@ footer {
                 color: black;
                 font-size: 18px;
             }
-             .logo img {
-width: 100px;
+
+            .logo img {
+                width: 100px;
 
 
             }
@@ -47,4 +55,16 @@ width: 100px;
     a:hover {
         opacity: 0.6;
     }
+}
+
+footer .button {
+    color: white;
+    text-decoration: none;
+    background: #88c34a;
+    padding: 0 7px;
+    border-radius: 30px;
+    font-size: none;
+    margin: 5px;
+    align-items: center;
+
 }
