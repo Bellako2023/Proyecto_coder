@@ -40,6 +40,14 @@ header section h1 {
   align-items: center;
   flex-direction: column;
 }
+.Contacto img {
+  display: flex;
+  border-radius: 50%;
+  position: relative;
+  height: 300px;
+  width: auto;
+  margin-top: 50px;
+}
 
 main {
   grid-area: main;
@@ -61,13 +69,6 @@ main .Indumentaria {
   width: 30vh;
   margin-top: 10%;
   height: 10%;
-}
-
-.ayuda {
-  width: 100%;
-  display: flex;
-  justify-content: space-around;
-  color: darkblue;
 }
 
 .Nombre {

@@ -42,4 +42,13 @@ header {
     display: flex;
     align-items: center;
     flex-direction: column;
+    img {
+        display: flex;
+        border-radius: 50%;
+        position: relative;
+        height: 300px;
+        width: auto;
+        margin-top: 50px;
+
+    }
 }
