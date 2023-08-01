@@ -23,7 +23,10 @@ main {
 
 // Estilos de contacto
 .Ayuda {
-    
+    margin: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: baseline;
 }
 
 .Nombre {
